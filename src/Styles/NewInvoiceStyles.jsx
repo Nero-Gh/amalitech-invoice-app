@@ -15,10 +15,10 @@ export default function NewInvoiceStyles() {
       gap: "5px",
     },
     icon: {
-      borderRadius: "50px",
+      borderRadius: "50%",
       backgroundColor: "white",
       width: "30px",
-      height: "30px",
+      height: "20px",
       margin: {
         right: "7px",
       },
@@ -36,6 +36,8 @@ export default function NewInvoiceStyles() {
     text: {
       pointerEvents: "none",
       fontWeight: "600",
+      fontSize: "14px",
+      width: "100%",
     },
     textNew: {
       display: "none",

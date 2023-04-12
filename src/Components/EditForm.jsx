@@ -327,7 +327,6 @@ function EditForm(props) {
                               setItems(items.filter((c) => c.id !== id));
                             }}
                           >
-                          
                             <img
                               src={trash}
                               alt=""
@@ -365,7 +364,7 @@ function EditForm(props) {
                   className="discart-btn"
                   onClick={props.formStatus}
                 >
-                  Discart
+                  Discard
                 </button>
               </div>
               <div className="btn">

@@ -15,6 +15,8 @@ import checkLocalStorage from "../../CustomHooks/checkLocalStorage";
 import InvoicesStyle from "../../Styles/InvoicesStyles";
 import { FormContext } from "../../Context/showForm";
 import emptyIllustration from "../../assets/illustration-empty.svg";
+import PdfEmail from "../../Components/PdfEmail";
+import GenerateEmail from "../../Components/GenerateEmail";
 
 export default function Invoices(props) {
   checkLocalStorage();
@@ -83,6 +85,7 @@ export default function Invoices(props) {
               />
             </Link>
           ))}
+          <GenerateEmail />
         </div>
       );
     }

@@ -8,14 +8,14 @@ export default function InvoiceDetailsStyles() {
       left: "50%",
       transform: "translate(-50%,50%)",
       width: "480px",
-      height: "249px",
+      // height: "249px",
 
       borderRadius: "20px",
 
       "& .modal-dialog": {
-        backgroundColor: "#fff",
+        // backgroundColor: "#fff",
         padding: "10%",
-        borderRadius: "10px",
+        borderRadius: "20px",
         boxShadow: "1px 1px 8px rgba(0,0,0,0.3)",
 
         "& .modal-header": {
@@ -27,9 +27,11 @@ export default function InvoiceDetailsStyles() {
         },
 
         "& .modal-content": {
+          borderRadius: "20px",
           display: "flex",
           flexDirection: "column",
           position: "relative",
+          width: "100%",
 
           gap: "10px",
         },

@@ -76,41 +76,41 @@ export default function Form(props) {
                 <div className="flexbox responsive">
                   <div className="country">
                     <div className="first-columm">
-                        <label htmlFor="city">City</label>
-                        <br />
-                        <input
-                          required
-                          type="text"
-                          value={formik.values.city}
-                          onChange={formik.handleChange}
-                          name="city"
-                          id="city"
-                        />
-                      </div>
-                      <div className="second-columm">
-                        <label htmlFor="post">Post Code</label>
-                        <br />
-                        <input
-                          required
-                          type="text"
-                          value={formik.values.post}
-                          onChange={formik.handleChange}
-                          name="post"
-                          id="post"
-                        />
-                      </div>
-                      <div className="third-columm">
-                        <label htmlFor="country">Country</label>
-                        <br />
-                        <input
-                          required
-                          type="text"
-                          value={formik.values.country}
-                          onChange={formik.handleChange}
-                          name="country"
-                          id="country"
-                        />
-                      </div>
+                      <label htmlFor="city">City</label>
+                      <br />
+                      <input
+                        required
+                        type="text"
+                        value={formik.values.city}
+                        onChange={formik.handleChange}
+                        name="city"
+                        id="city"
+                      />
+                    </div>
+                    <div className="second-columm">
+                      <label htmlFor="post">Post Code</label>
+                      <br />
+                      <input
+                        required
+                        type="text"
+                        value={formik.values.post}
+                        onChange={formik.handleChange}
+                        name="post"
+                        id="post"
+                      />
+                    </div>
+                    <div className="third-columm">
+                      <label htmlFor="country">Country</label>
+                      <br />
+                      <input
+                        required
+                        type="text"
+                        value={formik.values.country}
+                        onChange={formik.handleChange}
+                        name="country"
+                        id="country"
+                      />
+                    </div>
                   </div>
                 </div>
               </section>
@@ -154,75 +154,75 @@ export default function Form(props) {
                   />
                 </div>
                 <div className="flexbox responsive">
-                 <div className="country">
-                 <div className="first-columm">
-                    <label htmlFor="city">City</label>
-                    <br />
-                    <input
-                      required
-                      type="text"
-                      value={formik.values.clientCity}
-                      onChange={formik.handleChange}
-                      name="clientCity"
-                      id="city"
-                    />
+                  <div className="country">
+                    <div className="first-columm">
+                      <label htmlFor="city">City</label>
+                      <br />
+                      <input
+                        required
+                        type="text"
+                        value={formik.values.clientCity}
+                        onChange={formik.handleChange}
+                        name="clientCity"
+                        id="city"
+                      />
+                    </div>
+                    <div className="second-columm">
+                      <label htmlFor="post">Post Code</label>
+                      <br />
+                      <input
+                        required
+                        type="text"
+                        value={formik.values.clientPost}
+                        onChange={formik.handleChange}
+                        name="clientPost"
+                        id="post"
+                      />
+                    </div>
+                    <div className="third-columm">
+                      <label htmlFor="country">Country</label>
+                      <br />
+                      <input
+                        required
+                        type="text"
+                        value={formik.values.clientCountry}
+                        onChange={formik.handleChange}
+                        name="clientCountry"
+                        id="country"
+                      />
+                    </div>
                   </div>
-                  <div className="second-columm">
-                    <label htmlFor="post">Post Code</label>
-                    <br />
-                    <input
-                      required
-                      type="text"
-                      value={formik.values.clientPost}
-                      onChange={formik.handleChange}
-                      name="clientPost"
-                      id="post"
-                    />
-                  </div>
-                  <div className="third-columm">
-                    <label htmlFor="country">Country</label>
-                    <br />
-                    <input
-                      required
-                      type="text"
-                      value={formik.values.clientCountry}
-                      onChange={formik.handleChange}
-                      name="clientCountry"
-                      id="country"
-                    />
-                  </div>
-                 </div>
                 </div>
                 <div className="flexbox column-flex">
-                 <div className="invoice-date">
-                 <div className="first-columm responsive-date">
-                    <label htmlFor="date">Invoice Date</label>
-                    <br />
-                    <input
-                      required
-                      type="date"
-                      value={formik.values.date}
-                      onChange={formik.handleChange}
-                      name="date"
-                      id="date"
-                    />
+                  <div className="invoice-date">
+                    <div className="first-columm responsive-date">
+                      <label htmlFor="date">Invoice Date</label>
+                      <br />
+                      <input
+                        required
+                        type="date"
+                        value={formik.values.date}
+                        onChange={formik.handleChange}
+                        name="date"
+                        id="date"
+                      />
+                    </div>
+                    <div className="second-columm responsive-date">
+                      <label htmlFor="payment">Payment Terms</label>
+                      <br />
+                      <select
+                        id="payment"
+                        name="payment"
+                        onChange={formik.handleChange}
+                        value={formik.values.payment}
+                      >
+                        <option value={1}>Net 1 Days</option>
+                        <option value={7}>Net 7 Days</option>
+                        <option value={14}>Net 14 Days</option>
+                        <option value={30}>Net 30 Days</option>
+                      </select>
+                    </div>
                   </div>
-                  <div className="second-columm responsive-date">
-                    <label htmlFor="payment">Payment Terms</label>
-                    <br />
-                    <select
-                      id="payment"
-                      name="payment"
-                      onChange={formik.handleChange}
-                      value={formik.values.payment}
-                    >
-                      <option value={1}>Net 1 Days</option>
-                      <option value={7}>Net 7 Days</option>
-                      <option value={14}>Net 14 Days</option>
-                      <option value={30}>Net 30 Days</option>
-                    </select>
-                  </div>
-                 </div>
                 </div>
                 <div className="description">
                   <label htmlFor="description">Description</label>
@@ -243,99 +243,99 @@ export default function Form(props) {
                   {items.map((i) => {
                     return (
                       <div className="flexbox">
-                      <div className="item-items">
-                      <div className="first-columm">
-                          <label htmlFor="itemName">Item Name</label>
-                          <br />
-                          <input
-                            required
-                            type="text"
-                            value={i.itemName}
-                            onChange={(e) =>
-                              setItems((cItem) =>
-                                cItem.map((x) =>
-                                  x.id === i.id
-                                    ? { ...x, itemName: e.target.value }
-                                    : x
+                        <div className="item-items">
+                          <div className="first-columm">
+                            <label htmlFor="itemName">Item Name</label>
+                            <br />
+                            <input
+                              required
+                              type="text"
+                              value={i.itemName}
+                              onChange={(e) =>
+                                setItems((cItem) =>
+                                  cItem.map((x) =>
+                                    x.id === i.id
+                                      ? { ...x, itemName: e.target.value }
+                                      : x
+                                  )
                                 )
-                              )
-                            }
-                            name="itemName"
-                            id="itemName"
-                          />
-                        </div>
-                        <div className="second-columm">
-                          <label htmlFor="qty">Qty</label>
-                          <br />
-                          <input
-                            required
-                            type="text"
-                            value={i.qty}
-                            onChange={(e) =>
-                              setItems((cItem) =>
-                                cItem.map((x) =>
-                                  x.id === i.id
-                                    ? {
-                                        ...x,
-                                        qty: e.target.value,
-                                      }
-                                    : x
+                              }
+                              name="itemName"
+                              id="itemName"
+                            />
+                          </div>
+                          <div className="second-columm">
+                            <label htmlFor="qty">Qty</label>
+                            <br />
+                            <input
+                              required
+                              type="text"
+                              value={i.qty}
+                              onChange={(e) =>
+                                setItems((cItem) =>
+                                  cItem.map((x) =>
+                                    x.id === i.id
+                                      ? {
+                                          ...x,
+                                          qty: e.target.value,
+                                        }
+                                      : x
+                                  )
                                 )
-                              )
-                            }
-                            name="qty"
-                            id="qty"
-                          />
-                        </div>
-                        <div className="third-columm">
-                          <label htmlFor="price">Price</label>
-                          <br />
-                          <input
-                            required
-                            type="text"
-                            value={i.price}
-                            onChange={(e) =>
-                              setItems((cItem) =>
-                                cItem.map((x) =>
-                                  x.id === i.id
-                                    ? {
-                                        ...x,
-                                        price: e.target.value,
-                                      }
-                                    : x
+                              }
+                              name="qty"
+                              id="qty"
+                            />
+                          </div>
+                          <div className="third-columm">
+                            <label htmlFor="price">Price</label>
+                            <br />
+                            <input
+                              required
+                              type="text"
+                              value={i.price}
+                              onChange={(e) =>
+                                setItems((cItem) =>
+                                  cItem.map((x) =>
+                                    x.id === i.id
+                                      ? {
+                                          ...x,
+                                          price: e.target.value,
+                                        }
+                                      : x
+                                  )
                                 )
-                              )
-                            }
-                            name="price"
-                            id="price"
-                          />
-                        </div>
-                        <div className="fourth-columm">
-                          <label htmlFor="total">Total</label>
-                          <br />
-                          <input
-                            required
-                            type="text"
-                            value={i.qty * i.price}
-                            name="total"
-                            id="total"
-                            disabled
-                          />
-                        </div>
-                        <div
-                          className="fifth-columm"
-                          onClick={(e, id) => {
-                            id = i.id;
-                            setItems(items.filter((c) => c.id !== id));
-                          }}
-                        >
-                           <img
+                              }
+                              name="price"
+                              id="price"
+                            />
+                          </div>
+                          <div className="fourth-columm">
+                            <label htmlFor="total">Total</label>
+                            <br />
+                            <input
+                              required
+                              type="text"
+                              value={i.qty * i.price}
+                              name="total"
+                              id="total"
+                              disabled
+                            />
+                          </div>
+                          <div
+                            className="fifth-columm"
+                            onClick={(e, id) => {
+                              id = i.id;
+                              setItems(items.filter((c) => c.id !== id));
+                            }}
+                          >
+                            <img
                               src={trash}
                               alt=""
                               style={{ pointerEvents: "none" }}
                             />
+                          </div>
                         </div>
-                      </div>
                       </div>
                     );
                   })}
@@ -366,7 +366,7 @@ export default function Form(props) {
                   className="discart-btn"
                   onClick={changeState}
                 >
-                  Discart
+                  Discard
                 </button>
               </div>
               <div className="btn">

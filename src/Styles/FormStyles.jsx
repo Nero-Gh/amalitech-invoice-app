@@ -262,11 +262,9 @@ export default function FormStyles() {
         },
       },
       "@media screen and (max-width: 590px)": {
-
-        
         Form: {
           backgroundColor: "#141625",
-  
+
           ".dark &": {
             backgroundColor: "#141625",
           },
@@ -329,19 +327,17 @@ export default function FormStyles() {
             "& .item": {
               "& .flexbox": {
                 "& .item-items": {
-             
                   position: "relative",
                   height: "170px",
-                  width:"100%",
+                  width: "100%",
 
                   "& .first-columm": {
                     gridRow: "1",
                     gridColumn: "1/12",
-                   
 
                     "& label": {
                       width: "20rem",
-                      position:"absolute",
+                      position: "absolute",
                     },
                     "& input": {
                       position: "absolute",
@@ -350,32 +346,26 @@ export default function FormStyles() {
                     },
                   },
                   "& .second-columm": {
-                
                     position: "absolute",
                     top: "80px",
-                    
-                    left:"-70%",
-                  
+
+                    left: "-70%",
 
                     "& input": {
                       width: "100%",
                     },
                   },
                   "& .third-columm": {
-                  
                     position: "absolute",
                     top: "80px",
-                
                   },
                   "& .fourth-columm": {
                     position: "absolute",
                     top: "80px",
-                    
                   },
                   "& .fifth-columm": {
                     position: "absolute",
                     top: "80px",
-                    
                   },
                 },
               },
@@ -384,20 +374,17 @@ export default function FormStyles() {
         },
       },
       "@media screen and (max-width: 375px)": {
-
         "& .flexbox": {
           "& .country": {
             position: "relative",
             height: "200px",
-          
+
             "& .second-columm": {
               gridRow: "1",
               gridColumn: "3/4",
               marginLeft: "-5px",
             },
             "& .third-columm": {
-           
-
               position: "absolute",
               bottom: "0",
               // left: "-8.1rem",
@@ -452,8 +439,6 @@ export default function FormStyles() {
         // },
       },
     },
-
-
   });
 
   const classes = useStyles();
