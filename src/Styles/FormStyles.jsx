@@ -25,6 +25,8 @@ export default function FormStyles() {
       borderRadius: "0 50px 50px 0",
       position: "fixed",
       left: "80px",
+      // overflowX: "hidden",
+
       "& h1": {
         marginTop: "0",
       },
@@ -261,14 +263,24 @@ export default function FormStyles() {
           alignItems: "flex-start !important",
         },
       },
+
       "@media screen and (max-width: 590px)": {
+        Overlay: {
+          // height: "110vh",
+          // "& .just-form": {
+          //   background: "red",
+          // },
+        },
+
         Form: {
           backgroundColor: "#141625",
+          // height: "150vh",
 
           ".dark &": {
             backgroundColor: "#141625",
           },
         },
+
         "& .flexbox": {
           "& .country": {
             position: "relative",
@@ -323,6 +335,8 @@ export default function FormStyles() {
         },
 
         "& .wrapper": {
+          height: "165vh",
+
           "& .itemList": {
             "& .item": {
               "& .flexbox": {
@@ -372,8 +386,52 @@ export default function FormStyles() {
             },
           },
         },
+
+        "& .my-buttons": {
+          position: "absolute",
+
+          background: "#252945",
+          width: "100vw",
+          left: "-7%",
+          bottom: "-30%",
+          height: "110px",
+          zIndex: "1",
+
+          "& .discard": {
+            // paddingLeft: "10%",
+            "& button": {
+              width: "100px",
+              height: "48px",
+              fontSize: "11px",
+            },
+          },
+          "& .btns": {
+            display: "flex",
+            flexDirection: "row",
+            marginLeft: "-5%",
+
+            "& button": {
+              width: "103px",
+              height: "48px",
+              fontSize: "11px",
+            },
+          },
+        },
+
+        "& .edit-my-buttons": {
+          // bottom: "-100%",
+        },
       },
       "@media screen and (max-width: 375px)": {
+        "& .my-buttons": {},
+
+        Overlay: {
+          height: "230vh",
+          overflow: "none",
+          "& .just-form": {
+            height: "165vh",
+          },
+        },
         "& .flexbox": {
           "& .country": {
             position: "relative",
@@ -404,39 +462,24 @@ export default function FormStyles() {
             },
           },
         },
+      },
+    },
 
-        // "& .wrapper": {
-        //   "& .itemList": {
-        //     "& .item": {
-        //       backgroundColor:"red",
-        //       "& .flexbox": {
-        //         "& .item-items": {
+    "@media screen and (max-width: 590px)": {
+      Overlay: {
+        height: "220vh",
+        "& .just-form": {
+          height: "165vh",
+        },
+      },
 
-        //           "& .first-columm": {
-        //             gridRow: "1",
-        //             gridColumn: "1/12",
-        //           },
-        //           "& .second-columm": {
-        //             gridRow: "2",
-        //             gridColumn: "1/3",
-        //           },
-        //           "& .third-columm": {
-        //             gridRow: "2",
-        //             gridColumn: "3/8",
-        //           },
-        //           "& .fourth-columm": {
-        //             gridRow: "2",
-        //             gridColumn: "8/12",
-        //           },
-        //           "& .fifth-columm": {
-        //             gridRow: "2",
-        //             gridColumn: "12",
-        //           },
-        //         },
-        //       },
-        //     },
-        //   },
-        // },
+      Form: {
+        backgroundColor: "#141625",
+        // overflow: "hidden",
+
+        ".dark &": {
+          backgroundColor: "#141625",
+        },
       },
     },
   });

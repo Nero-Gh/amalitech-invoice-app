@@ -4,10 +4,12 @@ import FormStyles from "../Styles/FormStyles";
 import { v4 as uuidv4 } from "uuid";
 import { FormContext } from "../Context/showForm";
 import trash from "../assets/icon-delete.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function Form(props) {
   // items counter
   const [items, setItems] = useState([]);
+  const navigate = useNavigate();
 
   const { state, changeState } = useContext(FormContext);
   // formik
@@ -55,7 +57,7 @@ export default function Form(props) {
   if (!state)
     return (
       <div className={classes.Overlay}>
-        <div className={classes.Form}>
+        <div className={`${classes.Form} just-form`}>
           <h1>Create Invoice</h1>
           <form onSubmit={formik.handleSubmit}>
             <div className="wrapper">
@@ -359,8 +361,8 @@ export default function Form(props) {
                 </button>
               </section>
             </div>
-            <div className="options flexbox">
-              <div className="btn">
+            <div className={`options my-buttons flexbox `}>
+              <div className="btn discard">
                 <button
                   type="button"
                   className="discart-btn"
@@ -369,19 +371,27 @@ export default function Form(props) {
                   Discard
                 </button>
               </div>
-              <div className="btn">
+              <div className="btn btns">
                 <button
                   type="submit"
                   className="draft-btn"
                   name="save"
-                  onClick={() => (formik.values.status = "Draft")}
+                  onClick={() => {
+                    formik.values.status = "Draft";
+                    // navigate("/invoices");
+                    // location.reload();
+                  }}
                 >
                   Save as Draft
                 </button>
                 <button
                   type="submit"
                   className="save-btn"
-                  onClick={() => (formik.values.status = "Pending")}
+                  onClick={() => {
+                    formik.values.status = "Pending";
+                    // navigate("/invoices");
+                    // location.reload();
+                  }}
                 >
                   Save & Send
                 </button>

@@ -70,7 +70,8 @@ const PdfEmail = () => {
             name="user_name"
             class="form-control"
             id="exampleFormControlInput1"
-            placeholder="Bismark Kadogbe"
+            placeholder="Name"
+            required
           />
         </div>
         <div class="mb-3">
@@ -82,7 +83,8 @@ const PdfEmail = () => {
             name="user_email"
             class="form-control"
             id="exampleFormControlInput2"
-            placeholder="bismark.kadogbe@amalitech.org"
+            placeholder="Email"
+            required
           />
         </div>
         <div class="mb-3">
@@ -94,6 +96,7 @@ const PdfEmail = () => {
             name="message"
             id="exampleFormControlTextarea1"
             rows="3"
+            placeholder="Optional"
           ></textarea>
         </div>
         <button

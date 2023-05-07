@@ -61,7 +61,7 @@ export default function checkLocalStorage() {
               total: 400.0,
             },
           ],
-          granTotal: 556.0,
+          granTotal: "556.00",
           status: "Pending",
         },
         {

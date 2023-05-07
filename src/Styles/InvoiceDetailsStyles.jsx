@@ -6,23 +6,28 @@ export default function InvoiceDetailsStyles() {
       position: "absolute !important",
       top: "10%",
       left: "50%",
-      transform: "translate(-50%,50%)",
+      transform: "translate(-50%,0%)",
       width: "480px",
-      // height: "249px",
+      height: "400px",
+      // background: "#fff",
 
       borderRadius: "20px",
 
       "& .modal-dialog": {
-        // backgroundColor: "#fff",
-        padding: "10%",
+        // padding: "10%",
+        background: "#fff",
         borderRadius: "20px",
         boxShadow: "1px 1px 8px rgba(0,0,0,0.3)",
 
         "& .modal-header": {
           marginBottom: "20px",
 
+          border: "none",
+
           "& .modal-title": {
             fontSize: "32px",
+            paddingLeft: "7%",
+            paddingTop: "7%",
           },
         },
 
@@ -31,14 +36,17 @@ export default function InvoiceDetailsStyles() {
           display: "flex",
           flexDirection: "column",
           position: "relative",
-          width: "100%",
-
+          width: "inherit",
           gap: "10px",
+          background: "#fff",
         },
 
         "& .modal-body": {
           fontSize: "22px",
           marginBottom: "60px",
+          paddingLeft: "10%",
+          paddingRight: "7%",
+          marginTop: "-55px",
         },
         "& .modal-footer": {
           position: "absolute",
@@ -46,6 +54,9 @@ export default function InvoiceDetailsStyles() {
           right: "0px",
           display: "flex",
           gap: "10px",
+          paddingLeft: "7%",
+          paddingRight: "7%",
+          border: "none",
 
           "& .btn": {
             width: "89px",
@@ -484,8 +495,14 @@ export default function InvoiceDetailsStyles() {
 
     "@media screen and (max-width:590px) ": {
       deleteModal: {
+        // width: "327px",
+        // height: "220px",
+      },
+    },
+    "@media screen and (max-width:470px) ": {
+      deleteModal: {
         width: "327px",
-        height: "220px",
+        height: "400px",
       },
     },
   });

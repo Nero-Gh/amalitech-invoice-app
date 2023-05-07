@@ -36,18 +36,14 @@ export default function InvoicesStyle() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        flexDirection:"column",
-        
-      
+        flexDirection: "column",
 
         "& img": {
-          width:"70%",
-          height:"70%",
-          marginTop:"10px",
-        }
+          width: "70%",
+          height: "70%",
+          marginTop: "10px",
+        },
       },
-
-
 
       "@media screen and (max-width: 700px)": {
         "& .second-columm": {
@@ -82,6 +78,16 @@ export default function InvoicesStyle() {
           alignItems: "center",
           gap: "10px",
           width: "45%",
+          // backgroundColor: "red",
+        },
+      },
+
+      "@media screen and (max-width: 470px)": {
+        "& .second-columm": {
+          flexGrow: "1",
+          "& .column-1": {
+            marginLeft: "10%",
+          },
         },
       },
     },

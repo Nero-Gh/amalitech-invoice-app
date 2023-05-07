@@ -102,8 +102,12 @@ export default function Invoices(props) {
           </div>
         </div>
         <div className="second-columm">
-          <Filter change={filterHandler} />
-          <NewInvoice showForm={changeState} />
+          <div className="column-1">
+            <Filter change={filterHandler} />
+          </div>
+          <div className="column-2">
+            <NewInvoice showForm={changeState} />
+          </div>
         </div>
       </div>
 

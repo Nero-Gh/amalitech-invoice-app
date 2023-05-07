@@ -48,11 +48,12 @@ function EditForm(props) {
   if (!props.hide)
     return (
       <div className={classes.Overlay}>
-        <div className={classes.Form}>
+        <div className={`${classes.Form} just-form edit-form`}>
           <h1>
             Edit <span>#</span>
             {props.id.slice(0, 5).toUpperCase()}
           </h1>
+
           <form onSubmit={formik.handleSubmit}>
             <div className="wrapper">
               <section className="Bill-form">
@@ -357,8 +358,8 @@ function EditForm(props) {
                 </button>
               </section>
             </div>
-            <div className="options flexbox">
-              <div className="btn">
+            <div className="options my-buttons edit-my-buttons flexbox">
+              <div className="btn edit-btn1 discard">
                 <button
                   type="button"
                   className="discart-btn"
@@ -367,7 +368,7 @@ function EditForm(props) {
                   Discard
                 </button>
               </div>
-              <div className="btn">
+              <div className="btn btns edit-btn2">
                 <button type="submit" className="save-btn">
                   Save & Send
                 </button>
