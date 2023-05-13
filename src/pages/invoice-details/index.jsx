@@ -203,15 +203,29 @@ export default function InvoiceDetails(props) {
 
         <div className="options flexboxs">
           <div className="btns flexbox">
-            <button className="edit" onClick={editItem}>
-              Edit
-            </button>
+            {invoice[0].status === "Paid" ? (
+              <button className="gray" disabled>
+                Edit
+              </button>
+            ) : (
+              <button className="edit" onClick={editItem}>
+                Edit
+              </button>
+            )}
+
             <Button variant="primary" className="delete" onClick={handleShow}>
               Delete
             </Button>
-            <button className="paid" onClick={markAsPaid}>
-              Mark As Paid
-            </button>
+
+            {invoice[0].status === "Paid" ? (
+              <button className="gray" disabled>
+                Mark As Paid
+              </button>
+            ) : (
+              <button className="paid" onClick={markAsPaid}>
+                Mark As Paid
+              </button>
+            )}
           </div>
         </div>
       </div>
