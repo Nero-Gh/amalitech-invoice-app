@@ -48,6 +48,8 @@ export default function Form(props) {
       props.data(values);
       setItems([]);
       resetForm();
+
+      //to update the state of the form
       props.formStatus();
     },
   });

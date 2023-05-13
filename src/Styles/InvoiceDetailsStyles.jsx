@@ -139,6 +139,11 @@ export default function InvoiceDetailsStyles() {
             backgroundColor: "rgb(124, 93, 250)",
             color: "#fff",
           },
+
+          "& .gray": {
+            backgroundColor: "grey",
+            color: "#d1d1d1",
+          },
         },
 
         "& .status-details": {

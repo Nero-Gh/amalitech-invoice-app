@@ -1,4 +1,5 @@
 export default function checkLocalStorage() {
+  //checks if there is any data stored in the browser's local storage under the key "invoices"
   window.localStorage.getItem("invoices") === null &&
     window.localStorage.setItem(
       "invoices",
@@ -209,3 +210,6 @@ export default function checkLocalStorage() {
       ])
     );
 }
+/**
+ * The function checks if there is any data stored in the browser's local storage under the key "invoices". If there isn't any data, the function will store an array of five objects with sample invoice data.
+ */

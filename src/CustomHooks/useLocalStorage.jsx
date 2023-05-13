@@ -13,6 +13,7 @@ function useLocalStorage(key, initialValue) {
     }
   });
 
+  // Updating the stored data
   const setValue = (value) => {
     try {
       // Allow value to be a function so we have same API as useState
@@ -23,7 +24,6 @@ function useLocalStorage(key, initialValue) {
       // Save to local storage
       window.localStorage.setItem(key, JSON.stringify(valueToStore));
     } catch (error) {
-      // A more advanced implementation would handle the error case
       console.log(error);
     }
   };

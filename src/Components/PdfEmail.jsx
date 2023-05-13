@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { useNavigate, Link } from "react-router-dom";
 import arrwBack from "../assets/icon-arrow-left.svg";
+import "../Styles/PdfStyles.css";
 
 const PdfEmail = () => {
   const form = useRef();
@@ -17,12 +18,11 @@ const PdfEmail = () => {
     emailjs
       .sendForm(
         import.meta.env.VITE_APP_SERVICE_ID,
-        // "service_1fnl14q",
+
         import.meta.env.VITE_APP_TEMPLATE_ID,
-        // "template_4mws21t",
+
         form.current,
         import.meta.env.VITE_APP_USER_ID
-        // "8nugkyX-ybXYAR4k6"
       )
       .then(
         (result) => {
@@ -101,8 +101,8 @@ const PdfEmail = () => {
         </div>
         <button
           type="submit"
-          class="btn"
-          style={{ background: "#7c5dfa", color: "#fff" }}
+          className="btn-email"
+          // style={{ background: "#7c5dfa", color: "#fff" }}
         >
           Send Invoice
         </button>

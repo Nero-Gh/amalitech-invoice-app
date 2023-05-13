@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import arrF from "../assets/icon-arrow-right.svg";
+import "../Styles/PdfStyles.css";
 
 const GenerateEmail = () => {
   return (
@@ -22,7 +23,7 @@ const GenerateEmail = () => {
             borderRadius: "20px",
           }}
         >
-          <h6> Send Invoice</h6>
+          <h6 className="send-invoice"> Send Invoice</h6>
           <img
             src={arrF}
             alt=""

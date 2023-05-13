@@ -1,0 +1,25 @@
+.btn-email {
+  color: #fff;
+  background-color: #7c5dfa;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dark .btn-email {
+  color: #fff;
+}
+
+.send-invoice {
+  color: #888eb0;
+  /* width: 200px; */
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  /* padding: 10px; */
+}
+
+.dark .send-invoice {
+  color: #fff;
+}

@@ -17,6 +17,8 @@ import { FormContext } from "../../Context/showForm";
 import emptyIllustration from "../../assets/illustration-empty.svg";
 import PdfEmail from "../../Components/PdfEmail";
 import GenerateEmail from "../../Components/GenerateEmail";
+import MySelect from "../../Components/SomeFilter";
+// import MySelect from "../../Components/SomeFilter";
 
 export default function Invoices(props) {
   checkLocalStorage();
@@ -29,9 +31,14 @@ export default function Invoices(props) {
 
   //filtering
   const filterHandler = (value) => {
-    value !== "All"
-      ? setInvoices([...data.filter((d) => d.status === value)])
-      : setInvoices([...data]);
+    // value !== "All"
+    //   ? setInvoices([...data.filter((d) => d.status === value)])
+    //   : setInvoices([...data]);
+
+    if (value === "All") return setInvoices([...data]);
+    else {
+      setInvoices([...data.filter((d) => d.status === value)]);
+    }
   };
 
   //useEffect
@@ -40,6 +47,7 @@ export default function Invoices(props) {
     setInvoices(data);
   }, [props.fetch]);
 
+  //animation
   useLayoutEffect(() => {
     gsap.from(an.current, {
       duration: 1.5,
@@ -103,7 +111,8 @@ export default function Invoices(props) {
         </div>
         <div className="second-columm">
           <div className="column-1">
-            <Filter change={filterHandler} />
+            <MySelect change={filterHandler} />
+            {/* <Filter change={filterHandler} /> */}
           </div>
           <div className="column-2">
             <NewInvoice showForm={changeState} />
